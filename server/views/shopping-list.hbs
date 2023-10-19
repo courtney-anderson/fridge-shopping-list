@@ -9,14 +9,14 @@
       <div class="paper">
         <h1>Shopping List</h1>
         <div class="list">
-         {{#each puppies}}
+         {{#each list}}
   <div class="list-item">
     <label class="checkbox">
               <input type="checkbox" />
               <span class="checkmark"></span>
             </label>
     <a href="/{{id}}"><img class="img-circle" src="{{image}}" alt="{{item-name}}"></a>
-    <span class="item-label">{{item-name}}</span>
+    <span class="item-label">{{item-label}}</span>
     <span class="quantity">x{{quantity}}</span>
     <button class="delete-item"></button>
   </div>
