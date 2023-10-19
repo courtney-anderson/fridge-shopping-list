@@ -43,7 +43,7 @@ body {
 
 .paper {
   background-color: #f9f4ee;
-  background-image: url('../server/images/grid-tile.svg');
+  background-image: url('/images/grid-tile.svg');
   background-size: cover;
   width: 100%;
   height: auto;
@@ -157,7 +157,7 @@ a {
   height: 28px;
   width: 28px;
   border-radius: 28px;
-  background-image: url('./server/images/icon-delete.svg'); /* Set the path to your SVG file */
+  background-image: url('/images/icon-delete.svg'); /* Set the path to your SVG file */
   background-size: 100% 100%;
 }
 

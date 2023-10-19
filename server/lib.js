@@ -1,9 +1,9 @@
 import * as fsPromises from 'node:fs/promises'
 import * as Path from 'node:path'
 
-export async function readData(path) {
+export async function readData() {
   return await fsPromises
-    .readFile(Path.resolve(path))
+    .readFile(Path.resolve('./server/data/data.json'))
     .then((data) => JSON.parse(data))
 }
 

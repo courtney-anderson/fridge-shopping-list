@@ -19,7 +19,7 @@ server.set('views', Path.resolve('server/views'))
 
 server.get('/', async (req, res) => {
   const shoppingItems = await lib.readData()
-  res.render('home', shoppingItems)
+  res.render('shopping-list', shoppingItems)
 })
 
 export default server
