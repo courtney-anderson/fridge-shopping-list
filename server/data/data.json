@@ -1,41 +1,41 @@
 {
-  "items": [
+  "list": [
     {
       "id": 1,
-      "product": "6 Apples",
+      "item-label": "6 Apples",
       "quantity": 1,
       "image": "/images/Apples.jpeg" 
     },
     {
       "id": 2,
-      "product": "Loaf of Bread",
+      "item-label": "Loaf of Bread",
       "quantity": 1,
       "image": "/images/Bread.jpeg"
     },
     {
       "id": 3,
-      "product": "500g Of Butter",
+      "item-label": "500g Of Butter",
       "quantity": 1,
       "image": "/images/Butter.jpeg"
       
     },
     {
       "id": 4,
-      "product": "Dozen of Eggs",
+      "item-label": "Dozen of Eggs",
       "quantity": 1,
       "image": "/images/Eggs.jpeg"
       
     },
     {
       "id": 5,
-      "product": "Honey",
+      "item-label": "Honey",
       "quantity": 1,
       "image": "/images/Honey.jpeg"
       
     },
     {
       "id": 6,
-      "product": "1kg of Rice",
+      "item-label": "1kg of Rice",
       "quantity": 2,
       "image": "/images/Rice.jpeg"
     
