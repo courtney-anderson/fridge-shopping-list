@@ -99,6 +99,11 @@ a {
   font-weight: var(--header-weight);
   font-size: 24px;
   text-decoration: underline;
+  color: #003cd6;
+}
+
+a:visited {
+  color: #003cd6;
 }
 
 .list {
@@ -206,6 +211,7 @@ a {
   flex-direction: column;
   align-items: left;
   width: 100%;
+  margin-top: 8px;
 }
 
 .form-item {
