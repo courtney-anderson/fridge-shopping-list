@@ -43,7 +43,7 @@ body {
 
 .paper {
   background-color: #f9f4ee;
-  background-image: url('./server/images/grid-tile.svg');
+  background-image: url('../server/images/grid-tile.svg');
   background-size: cover;
   width: 100%;
   height: auto;
