@@ -15,8 +15,9 @@
               <input type="checkbox" />
               <span class="checkmark"></span>
             </label>
-    <a href="/{{id}}"><img class="img-circle" src="{{image}}" alt="{{name}}"></a>
-    <span class="item-label">Milk</span>
+    <a href="/{{id}}"><img class="img-circle" src="{{image}}" alt="{{item-name}}"></a>
+    <span class="item-label">{{item-name}}</span>
+    <span class="quantity">x{{quantity}}</span>
     <button class="delete-item"></button>
   </div>
   {{/each}}

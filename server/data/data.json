@@ -2,14 +2,15 @@
   "puppies": [
     {
       "id": 1,
-      "name": "Fido",
+      "item-name": "Fido",
       "owner": "Fred",
       "image": "/images/puppy1.jpg",
-      "breed": "Labrador"
+      "breed": "Labrador",
+      "quantity": 2
     },
     {
       "id": 2,
-      "name": "Coco",
+      "item-name": "Coco",
       "owner": "Chloe",
       "image": "/images/puppy2.jpg",
       "breed": "Labrador"
