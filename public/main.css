@@ -32,8 +32,8 @@ body {
     rgba(143, 143, 143, 1) 85%,
     rgba(82, 82, 82, 1) 100%
   );
-  background-image: url('../server/images/assorted-magnets.png');
-  background-image: url('../server/images/assorted-magnets.png'),
+  background-image: url('/images/assorted-magnets.png');
+  background-image: url('/images/assorted-magnets.png'),
     linear-gradient(
       135deg,
       rgba(82, 82, 82, 1) 0%,
