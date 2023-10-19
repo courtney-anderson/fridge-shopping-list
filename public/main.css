@@ -1,11 +1,26 @@
-html,
-body {
-  height: 100%;
+:root {
+  --header-font: 'Fredoka', serif;
+  --header-weight: 600;
+  --shadow-default: 2px 4px rgba(0, 0, 0, 0.2);
+  --shadow-large: 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+* {
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px 24px;
+  min-height: 100vh;
+  color: var(--default-color);
+  font-family: 'Gloria Hallelujah', serif;
+  font-size: 24px;
   background-color: gray;
   background: linear-gradient(
     135deg,
@@ -17,16 +32,206 @@ body {
     rgba(143, 143, 143, 1) 85%,
     rgba(82, 82, 82, 1) 100%
   );
-  font-family: 'Spirax', cursive;
 }
 
 .container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
-.app {
+.paper {
+  background-color: #f9f4ee;
+  background-image: url('./server/images/grid-tile.svg');
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  padding: 68px 24px 24px 24px;
+  box-shadow: var(--shadow-large);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  overflow: visible;
+  z-index: 1;
+  margin-bottom: -60px;
+}
+
+.logo {
+  position: absolute;
+  transform: translateY(-60px);
+  height: 120px;
+  width: auto;
+}
+
+h1 {
+  font-family: var(--header-font);
+  font-weight: var(--header-weight);
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+a {
+  font-family: var(--header-font);
+  font-weight: var(--header-weight);
+  font-size: 24px;
+  text-decoration: underline;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 100%;
+}
+
+.list-item {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin: 8px 0px;
+}
+
+.checkbox input {
+  display: none;
+}
+
+.checkbox {
+  display: flex;
+  width: 28px;
+  align-items: center;
+  gap: 12px;
+}
+
+.checkmark {
+  flex: none;
+  height: 28px;
+  width: 28px;
+  border-radius: 28px;
+  border: 2px solid #000;
+  background-color: #fff;
+}
+
+.checkbox .checkmark:after {
+  margin-top: -34px;
+  font-size: 40px !important;
+  color: #000;
+}
+
+.checkbox input:checked ~ .checkmark:after {
+  display: flex;
+}
+
+.checkmark:after {
+  content: '✓';
+  display: none;
+}
+
+.img-circle {
+  border-radius: 50%;
+  border: 2px solid #fff;
+  object-fit: cover;
+  width: 56px;
+  height: 56px;
+  box-shadow: var(--shadow-default);
+}
+
+.item-label {
+  width: 100%;
+}
+
+.delete-item {
+  all: initial;
+  flex: none;
+  height: 28px;
+  width: 28px;
+  border-radius: 28px;
+  background-image: url('./server/images/icon-delete.svg'); /* Set the path to your SVG file */
+  background-size: 100% 100%;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 16px 0px 8px 0px;
+}
+
+.pencil {
+  display: flex;
+  justify-content: space-between;
+  gap: 0px;
+  height: 48px;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.pencil-piece {
+  height: 100%;
+  width: auto;
+}
+
+.pencil-fill {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (min-width: 608px) {
+  .container {
+    width: 560px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    margin: 0px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .logo-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    overflow: visible;
+    z-index: 1;
+    margin-bottom: -96px;
+  }
+
+  .logo {
+    position: absolute;
+    transform: translateY(16px);
+    height: 80px;
+    width: auto;
+  }
+
+  .paper {
+    padding-top: 120px;
+    height: 100%;
+  }
+}
+
+/* OLD below */
+
+/* .app {
   display: flex;
   flex-direction: column;
 }
@@ -45,12 +250,6 @@ body {
   margin: 50px;
 }
 
-.img-circle {
-  border-radius: 50%;
-  object-fit: cover;
-  width: 230px;
-  height: 230px;
-}
 
 .title {
   text-align: center;
@@ -66,4 +265,4 @@ body {
   flex-direction: column;
   align-items: center;
   font-family: 'Roboto', sans-serif;
-}
+} */
