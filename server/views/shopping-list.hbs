@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="logo-header">
+        <img
+          class="logo"
+          src="./images/logo-happy-campers.png"
+          alt="happy camper logo"
+        />
+      </div>
+      <div class="paper">
+        <h1>Shopping List</h1>
+        <div class="list">
+         {{#each puppies}}
+  <div class="list-item">
+    <label class="checkbox">
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+    <a href="/{{id}}"><img class="img-circle" src="{{image}}" alt="{{name}}"></a>
+    <span class="item-label">Milk</span>
+    <button class="delete-item"></button>
+  </div>
+  {{/each}}
+  <div class="actions">
+          <a href>Add item</a>
+          <a href>Clear list</a>
+        </div>
+        <div class="pencil">
+          <img class="pencil-piece" src="/images/pencil1.png" />
+          <img class="pencil-fill" src="/images/pencil2.png" />
+          <img class="pencil-piece" src="/images/pencil3.png" />
+          <img class="pencil-fill" src="/images/pencil4.png" />
+          <img class="pencil-piece" src="/images/pencil5.png" />
+        </div>
+  </div>
+</div>
