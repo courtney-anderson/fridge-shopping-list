@@ -22,4 +22,9 @@ server.get('/', async (req, res) => {
   res.render('shopping-list', shoppingItems)
 })
 
+server.get('/add-item', async (req, res) => {
+  // const shoppingItems = await lib.readData()
+  res.render('add-item')
+})
+
 export default server
