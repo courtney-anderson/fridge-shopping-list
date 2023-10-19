@@ -201,6 +201,41 @@ a {
   width: 100%;
 }
 
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 100%;
+}
+
+.form-item {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin: 8px 0px;
+  font-family: var(--header-font);
+  font-weight: var(--header-weight);
+  font-size: 24px;
+}
+
+.field {
+  height: 48px;
+  width: 100%;
+  border: 2px solid #000;
+  border-radius: 16px;
+  font-family: var(--header-font);
+  font-weight: var(--header-weight);
+  font-size: 24px;
+}
+
+.field[type='text'] {
+  flex-basis: 80%;
+  font-family: 'Gloria Hallelujah', serif;
+  font-size: 24px;
+}
+
 @media screen and (min-width: 608px) {
   .container {
     width: 560px;
@@ -240,6 +275,8 @@ a {
   .paper {
     padding-top: 120px;
     height: 100%;
+    min-height: 100vh;
+    box-shadow: none;
   }
 }
 
