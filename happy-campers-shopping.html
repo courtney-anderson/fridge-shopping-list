@@ -10,6 +10,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
   <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&amp;family=Fredoka:wght@600&amp;display=swap"
     rel="stylesheet" />
+    
+    <script>
+      function removeItem(id) {
+          let itemRemove = document.getObjectById(id);
+          if (itemRemove) {
+              itemRemove.remove();
+          }
+      }
+  </script>
 </head>
 </head>
 
@@ -61,7 +70,9 @@
           <!-- quantity -->
           <span class="quantity"></span>
           <!-- delete item button -->
-          <button class="delete-item"></button>
+          <button onclick="removeItem('{{id}}')" class="delete-item">Remove Item</button> 
+          <!-- <div id="item1">This is item 1. <button onclick="removeItem('item1')">Remove</button></div> -->
+
         </div>
       </div>
       <div class="actions">
