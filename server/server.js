@@ -65,7 +65,7 @@ server.post('/delete-item/:id', async (req, res) => {
     (item) => item.id == unwantedItemId
   )
 
-  shoppingItems.splice(unwantedItemIndex, 1)
+  shoppingItems.list.splice(unwantedItemIndex, 1)
 
   await lib.writeData(shoppingItems)
 
