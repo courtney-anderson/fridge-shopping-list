@@ -7,7 +7,7 @@ export async function readData() {
     .then((data) => JSON.parse(data))
 }
 
-export async function writeData(path, newData) {
+export async function writeData(newData) {
   const newFile = JSON.stringify(newData, null, 2)
-  return await fsPromises.writeFile(Path.resolve(path), newFile)
+  return await fsPromises.writeFile('./server/data/data.json', newFile)
 }

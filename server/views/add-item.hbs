@@ -7,35 +7,31 @@
           alt="happy camper logo"
         />
       </div>
-<!-- ^^^^^ exists on homepage already -->
 
-
-<!-- :: section that's different to homepage :: -->
       <div class="paper">
         <h1>Add Item</h1>
-<form class="form" action="/add-item/{{id}}" method="post">
-  <!-- <img class="img-circle" src="{{image}}" alt="{{name}}"> -->
-  <label for="item-name" class="form-item">
+<form class="form" action="/add-item" method="post" enctype="multipart/form-data">
+
+  <label for="product" class="form-item">
     Product:
-    <input type="text" name="name" id="item-name" value="{{name}}" class="field">
+    <input type="text" name="product" id="product" value="{{name}}" class="field">
   </label>
   
   <label for="quantity" class="form-item">
-    Quantity
+    Quantity:
     <input type="text" name="quantity" id="quantity" class="field">
   </label>
-  
-  {{!-- <label for="owner" class="form-item">
-    Owner:
-    <input type="text" name="owner" id="owner" value="{{owner}}>
-  {{!-- </label>
-  
-  <input type="hidden" name="image" value="{{image}}>
-  
-  {{!-- <input type="submit" value="Submit"> --}} 
-</form>
- <div class="actions">
-          <a href>Save</a>
+
+  <label for="image" class="form-item">
+    Upload image:
+    <input type="file" name="image" id="image" class="field">
+  </label>
+
+   <div class="actions">
+          <input type="submit" value="Save" class="submit">
           <a href>Cancel</a>
         </div>
+
+</form>
+
 {{>pencil}}
