@@ -19,11 +19,11 @@
     <span class="item-label">{{product}}</span>
     <span class="quantity">x{{quantity}}</span>
     <form action="/delete-item/{{id}}" method="post"><button class="delete-item" type="submit"></button></form>
-  </div>
+     </div>
   {{/each}}
   <div class="actions">
           <a href="/add-item">Add item</a>
-          <a href>Clear list</a>
+           <form action="/clearAll" method="post"><button class="submit" type="submit">Clear All</button></form>
         </div>
      {{>pencil}}
   </div>
