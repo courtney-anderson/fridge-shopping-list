@@ -58,4 +58,18 @@ server.post('/add-item', upload.single('image'), async (req, res) => {
   res.redirect('/')
 })
 
+server.post('/delete-item/:id', async (req, res) => {
+  const shoppingItems = await lib.readData()
+  const unwantedItemId = req.params.id
+  let unwantedItemIndex = shoppingItems.list.findIndex(
+    (item) => item.id == unwantedItemId
+  )
+
+  shoppingItems.splice(unwantedItemIndex, 1)
+
+  await lib.writeData(shoppingItems)
+
+  res.redirect('/')
+})
+
 export default server
