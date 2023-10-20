@@ -72,4 +72,15 @@ server.post('/delete-item/:id', async (req, res) => {
   res.redirect('/')
 })
 
+
+server.post('/clearAll', async (req, res) => {
+  const shoppingItems = await lib.readData()
+
+  shoppingItems.list = []
+
+  await lib.writeData(shoppingItems)
+
+  res.redirect('/')
+})
+
 export default server

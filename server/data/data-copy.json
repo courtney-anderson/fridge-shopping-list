@@ -1,0 +1,45 @@
+{
+  "list": [
+    {
+      "id": 1,
+      "item-label": "6 Apples",
+      "quantity": 1,
+      "image": "/images/Apples.jpeg" 
+    },
+    {
+      "id": 2,
+      "item-label": "Loaf of Bread",
+      "quantity": 1,
+      "image": "/images/Bread.jpeg"
+    },
+    {
+      "id": 3,
+      "item-label": "500g Of Butter",
+      "quantity": 1,
+      "image": "/images/Butter.jpeg"
+      
+    },
+    {
+      "id": 4,
+      "item-label": "Dozen of Eggs",
+      "quantity": 1,
+      "image": "/images/Eggs.jpeg"
+      
+    },
+    {
+      "id": 5,
+      "item-label": "Honey",
+      "quantity": 1,
+      "image": "/images/Honey.jpeg"
+      
+    },
+    {
+      "id": 6,
+      "item-label": "1kg of Rice",
+      "quantity": 2,
+      "image": "/images/Rice.jpeg"
+    
+    }
+    
+  ]
+}
