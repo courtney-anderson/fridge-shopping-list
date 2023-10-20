@@ -15,22 +15,16 @@
               <input type="checkbox" />
               <span class="checkmark"></span>
             </label>
-    <a href="/{{id}}"><img class="img-circle" src="{{image}}" alt="{{item-name}}"></a>
-    <span class="item-label">{{item-label}}</span>
+    <a href="/{{id}}"><img class="img-circle" src="{{image}}" alt="{{product}}"></a>
+    <span class="item-label">{{product}}</span>
     <span class="quantity">x{{quantity}}</span>
-    <button class="delete-item"></button>
+    <form action="/delete-item/{{id}}" method="post"><button class="delete-item" type="submit"></button></form>
   </div>
   {{/each}}
   <div class="actions">
           <a href="/add-item">Add item</a>
           <a href>Clear list</a>
         </div>
-        <div class="pencil">
-          <img class="pencil-piece" src="/images/pencil1.png" />
-          <img class="pencil-fill" src="/images/pencil2.png" />
-          <img class="pencil-piece" src="/images/pencil3.png" />
-          <img class="pencil-fill" src="/images/pencil4.png" />
-          <img class="pencil-piece" src="/images/pencil5.png" />
-        </div>
+     {{>pencil}}
   </div>
 </div>
