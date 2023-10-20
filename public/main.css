@@ -243,6 +243,17 @@ a:visited {
   font-size: 24px;
 }
 
+.upload-button {
+  display: flex;
+  width: 100%;
+  flex-direction: row-reverse;
+  gap: 24px;
+  margin: 8px 0px;
+  font-family: var(--header-font);
+  font-weight: var(--header-weight);
+  font-size: 24px;
+}
+
 .field {
   height: 48px;
   width: 100%;
@@ -254,7 +265,7 @@ a:visited {
 }
 
 .field[type='text'] {
-  flex-basis: 80%;
+  flex-basis: 75%;
   font-family: 'Gloria Hallelujah', serif;
   font-size: 24px;
   padding: 0px 16px;
